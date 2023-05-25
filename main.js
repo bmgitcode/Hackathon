@@ -1,8 +1,9 @@
-document.addEventListener('onClick', () => {
+document.addEventListener('onclick', () => {
   // const video = document.getElementsByClassName("video-stream html5-main-video");
-  const ingredients = document.querySelector("#mntl-structured-ingredients_1-0");
+  const content = document.querySelector('.wrap')
+  const ingredients = document.querySelector("#wprm-recipe wprm-recipe-template-custom");
 
-  window.location.href = ingredients
+  document.insertBefore(ingredients, content.firstChild)
 
 
  });

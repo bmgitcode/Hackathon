@@ -1,43 +1,43 @@
-document.addEventListener('onclick', () => {
-  // const video = document.getElementsByClassName("video-stream html5-main-video");
-  const content = document.querySelector('.wrap')
-  const ingredients = document.querySelector("#wprm-recipe wprm-recipe-template-custom");
+// document.addEventListener('onClick', () => {
 
-  document.insertBefore(ingredients, content.firstChild)
+//   const ingredients = document.querySelector("#mntl-structured-ingredients_1-0");
 
 
- });
 
+//  });
 
-//  const video = document.getElementsByClassName("video-stream html5-main-video");
-//  const video = document.querySelector(".video");
+let images = [
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts4.jpg",
+  "https://i.chzbgr.com/full/9441876224/h39F6DD50/wheel",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts2.jpg",
+  "https://ih1.redbubble.net/image.911712648.8630/fposter,small,wall_texture,product,750x1000.jpg",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts5.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd4RoSRgfm6M32bd18VQdcVEzx8vPnpeHAg&usqp=CAU",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts4.jpg",
+  "https://i.chzbgr.com/full/9441876224/h39F6DD50/wheel",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts2.jpg",
+  "https://ih1.redbubble.net/image.911712648.8630/fposter,small,wall_texture,product,750x1000.jpg",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts5.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd4RoSRgfm6M32bd18VQdcVEzx8vPnpeHAg&usqp=CAU",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts4.jpg",
+  "https://i.chzbgr.com/full/9441876224/h39F6DD50/wheel",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts2.jpg",
+  "https://ih1.redbubble.net/image.911712648.8630/fposter,small,wall_texture,product,750x1000.jpg",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts5.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd4RoSRgfm6M32bd18VQdcVEzx8vPnpeHAg&usqp=CAU",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts4.jpg",
+  "https://i.chzbgr.com/full/9441876224/h39F6DD50/wheel",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts2.jpg",
+  "https://ih1.redbubble.net/image.911712648.8630/fposter,small,wall_texture,product,750x1000.jpg",
+  "https://sadanduseless.b-cdn.net/wp-content/uploads/2019/05/funny-corgi-butts5.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd4RoSRgfm6M32bd18VQdcVEzx8vPnpeHAg&usqp=CAU",
+  "https://eatliver.b-cdn.net/wp-content/uploads/2021/01/corgi-butt21.jpg"
+]
 
-//   window.addEventListener('keydown', (e) => {
-//     if (e.code === 'g') {
-//       decreasePlayback();
-//     };
-//   });
+const youtubeImages = document.getElementsByTagName("img")
+// const youtubeImages = document.querySelector('yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded')
 
-//   window.addEventListener('keydown', (e) => {
-//     if (e.code === 'h') {
-//       increasePlayback();
-//     };
-//   });
-
-//   window.addEventListener('keydown', (e) => {
-//     if (e.code === 'r') {
-//       resetPlayback();
-//     };
-//   });
-
-//   function increasePlayback () = {
-//     video.playbackRate += 0.1;
-//   }
-
-//   function decreasePlayback () = {
-//     video.playbackRate -= 0.1;
-//   }
-
-//   function resetPlayback () = {
-//     video.playbackRate = 1.0;
-//   }
+for (let i = 0; i< youtubeImages.length; i++){
+  const randomized = Math.floor(Math.random() * images.length)
+  youtubeImages[i].src = images[randomized];
+}

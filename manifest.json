@@ -1,17 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Speed Up",
-  "description": "Manage youtube video speed",
+  "name": "Straight to the Ingredients",
+  "description": "redirect to ingredients",
   "version": "1.0",
-  // "action": {
-  //   "default_popup": "",
-  //   "default_icon": ""
-  // },
+
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/watch?v=*"],
+      "matches": ["https://www.allrecipes.com/*"],
       "js": ["./main.js"]
     }
   ]
 }
-

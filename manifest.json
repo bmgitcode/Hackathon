@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Reimager",
-  "description": "change thumbnails",
-  "version": "1.0",
+  "description": "for corgi lovers",
+  "version": "4.0",
 
   "content_scripts": [
     {
